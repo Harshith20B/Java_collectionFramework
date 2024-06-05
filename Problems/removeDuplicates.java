@@ -1,4 +1,5 @@
-class Solution {
+package Problems;
+class removeDuplicates {
     public int removeDuplicates(int[] nums) {
         int len = nums.length;
         int arr[] = new int[len];
@@ -19,6 +20,11 @@ class Solution {
             nums[i]=arr[i];
         }
         return (k+1);
+    }
+    public static void main(String args[]){
+        int arr[] = {1,2,3};
+        removeDuplicates obj = new removeDuplicates();
+        obj.removeDuplicates(arr);
     }
 }
 // class Solution {
