@@ -80,8 +80,8 @@ public class CustomerPurchaseApp implements ActionListener {
         itemPrices.put(1, 150.0);
         itemPrices.put(2, 60.0);
 
-        String uname = JOptionPane.showInputDialog(null, "Enter USERNAME=");
-        String psw = JOptionPane.showInputDialog(null, "Enter PASSWORD=");
+        String uname = JOptionPane.showInputDialog(null, "Enter USERNAME :");
+        String psw = JOptionPane.showInputDialog(null, "Enter PASSWORD :");
 
         if (uname.equals("msrit123") && psw.equals("ise123")) {
             JOptionPane.showMessageDialog(null, "LOGIN VALID");
