@@ -11,10 +11,9 @@ public class MissedCalls {
         contacts.add(new Contacts(1576241398,"P5"));
         System.out.println(contacts);
         Scanner sc = new Scanner(System.in);
-        while(true) {
+        while(true){
             System.out.println("Select 1 - add missed calls, 2-display, 3- delete, 4-exit");
-            switch(sc.nextInt())
-            {
+            switch(sc.nextInt()){
                 case 1:
                     System.out.println("Enter phone number");
                     long num=sc.nextLong();
@@ -31,9 +30,8 @@ public class MissedCalls {
                                 System.out.println("Name: "+c.name+"\nNumber: "+m.number+"\nDate: "+m.date);
                             } 
                         }
-                        if(flag==0){
+                        if(flag==0)
                             System.out.println("Name: "+"private caller"+"\nNumber: "+m.number+"\nDate: "+m.date);
-                        }
                     }
                     break;
                 case 3:
@@ -42,9 +40,7 @@ public class MissedCalls {
                         case 1:
                             int i=1;
                             for(MissCall m:mc)
-                            {
                                 System.out.println(i++ +":"+m.number);
-                            }
                             System.out.println("Enter the index to be deleted");
                             int ch=sc.nextInt();
                             mc.remove(ch-1);
@@ -69,11 +65,9 @@ public class MissedCalls {
             }
         }
     }
-
 }
 
-class Contacts
-{
+class Contacts{
     long number;
     String name;
     public Contacts(long number, String name) {
@@ -85,11 +79,9 @@ class Contacts
     public String toString() {
         return (number + ":" + name);
     }
-
 }
 
-class MissCall
-{
+class MissCall{
     long number;
     Date date;
     public MissCall(long number, Date date) {
@@ -101,6 +93,4 @@ class MissCall
     public String toString() {
         return "number=" + number + "\n date=" + date;
     }
-
-
 }

@@ -8,7 +8,7 @@ public class prac {
         String s3 = new String("ram");
         String s4 = new String("ram");
         System.out.println(s3==s4);
-        System.out.println(s3.equals(s4));
+        System.out.println(s3.equals(s4));// content  comparision
         String[] words = { "I", "programmed", "you", "to", "believe", "that." };
         String s = String.join( " ", words ); 
         System.out.println(s);
