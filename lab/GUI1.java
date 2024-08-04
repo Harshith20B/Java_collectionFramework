@@ -1,4 +1,4 @@
-package lab;
+//package lab;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,7 +10,6 @@ class STUDENT1 {
     String name, usn, address, category;
     int age;
     double sg1, sg2, sg3, sg4, cgpa;
-
     STUDENT1(String name, String usn, String address, String category, int age, double sg1, double sg2, double sg3, double sg4) {
         this.name = name;
         this.usn = usn;
@@ -27,7 +26,6 @@ class STUDENT1 {
         return name + "  " + usn + "  " + address + "  " + category + "   " + age + "    CGPA=" + cgpa + "\n";
     }
 }
-
 public class GUI1 implements ActionListener {
     static JFrame f1 = new JFrame("STUDENT INFO");
     static JLabel label1 = new JLabel("ENTER NAME");

@@ -1,4 +1,4 @@
-package lab;
+//package lab;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
