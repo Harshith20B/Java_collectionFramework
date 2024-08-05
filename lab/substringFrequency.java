@@ -16,5 +16,6 @@ public class substringFrequency {
         System.out.println("enter the substring" ); // 1
         String substr = sc.nextLine();
         System.out.println( frequency( str, substr ) ); // 0
+        sc.close();
     }
 }
