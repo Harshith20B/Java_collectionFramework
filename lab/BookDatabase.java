@@ -28,7 +28,7 @@ public class BookDatabase {
         Scanner scanner = new Scanner(System.in);
         int nextId = 1;
 
-        books.add(new Book(nextId++, "The Catcher in the Rye", "J.D. Salinger", "Little, Brown and Company", 299.99));
+        books.add(new Book(nextId++, "The Catcher in the Rye", "J.D. Salinger","Little, Brown and Company", 299.99));
         books.add(new Book(nextId++, "To Kill a Mockingbird", "Harper Lee", "J.B. Lippincott & Co.", 199.99));
         books.add(new Book(nextId++, "1984", "George Orwell", "Secker & Warburg", 249.99));
         books.add(new Book(nextId++, "Pride and Prejudice", "Jane Austen", "T. Egerton", 159.99));
@@ -64,7 +64,7 @@ public class BookDatabase {
         System.out.println("Books with price greater than " + price + ":");
         for (Book book : expensiveBooks) {
             System.out.println(book);
-        }
+        }   
 
         scanner.close();
     }

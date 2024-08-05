@@ -4,7 +4,7 @@ class Stack<T> {
     List<T> elements = new ArrayList<>();
     final int maxSize;
     Stack(int maxSize) {
-    this.maxSize = maxSize;
+        this.maxSize = maxSize;
     }
     void push(T element) {
         if (elements.size() < maxSize) {
@@ -12,13 +12,13 @@ class Stack<T> {
         }
     }
     T pop() {
-        if (isEmpty()) {
+        if (elements.isEmpty()) {
             return null;
         }
         return elements.remove(elements.size() - 1);
     }
     T peek() {
-        if (isEmpty()) {
+        if (elements.isEmpty()) {
             return null;
         }
         return elements.get(elements.size() - 1);
@@ -26,14 +26,11 @@ class Stack<T> {
     void clear() {
         elements.clear();
     }
-    boolean isEmpty() {
-        return elements.isEmpty();
-    }
     boolean isFull() {
         return elements.size() >= maxSize;
     }
     void display() {
-        if (isEmpty()) {
+        if (elements.isEmpty()) {
             System.out.println("Stack is empty");
         } else {
             System.out.println("Stack contents: " + elements);
