@@ -2,6 +2,8 @@ package Problems;
 //Longest Increasing Subsequence
 import java.util.Arrays;
 
+import Problems2.Solution;
+
 public class LIS{
     public int lengthOfLIS(int[] nums) {
         if (nums == null || nums.length == 0) {

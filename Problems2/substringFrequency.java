@@ -1,3 +1,4 @@
+package Problems2;
 //package lab;
 import java.util.Scanner;
 public class substringFrequency {
